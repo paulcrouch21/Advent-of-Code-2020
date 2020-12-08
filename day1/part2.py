@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 63508801467b18cd6c7f368d27a39538fe9ea66b
 with open("input.txt", 'r') as f:
         input = [(int)(line.strip()) for line in f]
 
