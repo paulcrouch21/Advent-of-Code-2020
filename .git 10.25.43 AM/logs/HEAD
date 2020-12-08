@@ -1,2 +1,0 @@
-0000000000000000000000000000000000000000 381f830a4e7e9fc153f2ea39c8da0afd50cb383f paulcrouch99 <paul.crouch99@yahoo.com> 1607438455 -0600	commit (initial): First commit
-381f830a4e7e9fc153f2ea39c8da0afd50cb383f 63508801467b18cd6c7f368d27a39538fe9ea66b paulcrouch99 <paul.crouch99@yahoo.com> 1607438934 -0600	commit: Fixed a bug where the print statement would occur twice
