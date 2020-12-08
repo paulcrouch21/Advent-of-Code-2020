@@ -13,10 +13,8 @@ for x in input:
                 firstNumber = input[c1]
                 secondNumber = input[c2]
                 if firstNumber + secondNumber == 2020:
-                        print(firstNumber)
-                        print(secondNumber)
                         print(firstNumber * secondNumber)
-                        break
+                        exit()
                 c2 += 1
         
         c1 += 1

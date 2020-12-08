@@ -19,7 +19,7 @@ for x in input:
                         
                         if firstNumber + secondNumber + thirdNumber == 2020:
                                 print(firstNumber * secondNumber * thirdNumber)
-                                break
+                                exit()
                         c3 += 1
                 c2 += 1
         
