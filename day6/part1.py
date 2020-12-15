@@ -4,8 +4,7 @@ with open("input.txt", 'r') as f:
 questions = list(map(chr, range(97, 123)))
 
 def main():
-        totalYes = 0
-        print(f'The total yes\'s are {groupByGroup(input, questions, totalYes)}')
+        print(f'The total yes\'s are {groupByGroup(input, questions, 0)}')
 
 #function to iterate through the groups
 def groupByGroup(input, questions, totalYes):
