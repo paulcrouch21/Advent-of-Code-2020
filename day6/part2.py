@@ -1,6 +1,7 @@
 with open("input.txt", 'r') as f:
         input = [line.strip() for line in f]
 
+#answer is 3125
 
 def main():
         questions = list(map(chr, range(97, 123)))
@@ -20,12 +21,9 @@ def groupByGroup(input, questions, numberOfAnswers):
                                                 people += 1
 
                         print(f'People are: {people}')
-                        #a lot of people, not one same answer
-                        #do it if one person
-                        #do it if many people and a letter is more than 1
 
-                        if people == 1 or (people > 1 and max(numberOfAnswers) > 1) or (people == 1 and counter == len(input) - 1):
-                                answer += counts(numberOfAnswers)
+                        answer += counts(numberOfAnswers, people)
+                        print(f'The new answer is {answer}')
 
                         #resets the values
                         questions = list(map(chr, range(97, 123)))
@@ -39,16 +37,12 @@ def groupByGroup(input, questions, numberOfAnswers):
                         people += 1
         return answer
 
-def counts(numberOfAnswers):
+def counts(numberOfAnswers, people):
         print(numberOfAnswers)
         answer = 0
         for i in numberOfAnswers:
-                if max(numberOfAnswers) == 1:
-                        if i == 1:
-                                answer += 1
-                elif max(numberOfAnswers) >= 2:
-                        if i >= 2:
-                                answer += 1
+                if i == people:
+                        answer += 1
         print(f'Answer is {answer}')
         print('\nThe next one is:')
         return answer
