@@ -17,8 +17,8 @@ def groupByGroup(input, questions, numberOfAnswers):
                         for counter2, x in enumerate(questions):
                                 if x in i:
                                         numberOfAnswers[counter2] += 1
-                                        if counter == len(input) - 1:
-                                                people += 1
+                        if counter == len(input) - 1:
+                                people += 1
 
                         print(f'People are: {people}')
 
