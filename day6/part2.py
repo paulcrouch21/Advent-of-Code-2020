@@ -20,10 +20,7 @@ def groupByGroup(input, questions, numberOfAnswers):
                         if counter == len(input) - 1:
                                 people += 1
 
-                        print(f'People are: {people}')
-
                         answer += counts(numberOfAnswers, people)
-                        print(f'The new answer is {answer}')
 
                         #resets the values
                         questions = list(map(chr, range(97, 123)))
@@ -38,13 +35,10 @@ def groupByGroup(input, questions, numberOfAnswers):
         return answer
 
 def counts(numberOfAnswers, people):
-        print(numberOfAnswers)
         answer = 0
         for i in numberOfAnswers:
                 if i == people:
                         answer += 1
-        print(f'Answer is {answer}')
-        print('\nThe next one is:')
         return answer
 
 if __name__ == '__main__':
